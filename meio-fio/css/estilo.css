@@ -1,0 +1,360 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 900;
+    color: #3c3c3c;
+    line-height: 1;
+    font-size: 5.5vmax;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+p, span{
+    font-family: 'Open Sans', sans-serif;
+}
+.responsivo{
+    display: none;
+}
+
+.navbar{
+    background-color: #ffffff;
+    top: 0;
+    right: 0;
+    height: 80px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.navbar-logo {
+    max-width: 250px;
+    float: left;
+}
+.navbar-logo img{
+    width: 100%
+}
+
+.navbar-menu > ul{
+    float: right;
+    list-style: none;
+}
+.navbar-menu > ul li{
+    float: left;
+    margin-right: 10px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+li > a{
+    color: #3c3c3c;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 0px;
+}
+.intro{
+    border-top: 1px solid #ccc;
+}
+
+.banner{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.data{
+    margin-bottom: 0;
+}
+
+.g-autoplay-video video {
+    width: 100%;
+    height: auto;
+}
+audio, canvas, video {
+    width: 100vw;
+    display: flex;
+}
+user agent stylesheet video {
+    object-fit: contain;
+}
+
+.linha-apoio{
+    background-color: #737373;
+    margin-top: 0;
+}
+
+.linha-apoio > .container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2%;
+    justify-content: center;
+}
+
+.itens{
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px;
+    align-self: center;
+    margin: 0 auto;
+}
+.centralizador {
+    align-self: center;
+}
+.navbar-logo, .navbar-menu {
+    margin-top: 1.5%;
+}
+.navbar-menu {
+    float: right;
+}
+.bloco {
+    align-self: center;
+}
+.video {
+    z-index: 40;
+}
+
+.texto{
+    max-width: 700px;
+    align-self: center;
+    margin: 0px auto;
+    padding-top: 3%;
+    font-size: 16px;
+    line-height: 2;
+}
+.ceu{
+    background-image: url("../imagens/imagem-fundo.jpg");
+    background-size: cover;
+    padding: 3%;
+}
+
+.colunas{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1300px;
+    align-self: center;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 16px;
+}
+.coluna{
+    max-width: 600px;
+}
+.coluna > ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+ul.coluna {
+	list-style-type: square;
+	}
+.videozinho{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.videozinho iframe {
+    min-height: 476px;
+}
+
+footer{
+    background-color: #737373;
+}
+.rodape{
+    padding: 3% 0 1%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+
+}
+.redes > p{
+    margin-top: 0;
+}
+.facebook, .instagram, .twitter {
+    max-height: 30px;
+}
+.direitos{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .navbar-menu{
+        display: none;
+    }
+    .responsivo{
+        display: block;
+        text-align: right;
+    }
+
+    .container, .texto {
+        padding: 2%;
+    }
+    .ceu{
+        padding: 2%;
+    }
+
+    .colunas{
+        padding: 2%;
+        max-width: 700px;
+        margin: 0 auto;
+        display: inline-block;
+        justify-content: center;
+        align-self: center;
+    }
+    .coluna{
+        max-width: 600px;
+    }
+
+    .videozinho iframe {
+        min-height: 380px;
+    }
+
+    /* MENU RESPONSIVO */
+
+    .nav-toggle {
+        float: right;
+        list-style: none;
+    }
+
+    .sidebar > ul{
+        list-style: none;
+    }
+    .hamburger {
+        width: 1.08em;
+        position: relative;
+        display: inline-block;
+        height: 0.6em;
+        font-size: 1.2em;
+        background: #fff;
+    }
+    .hamburger span {
+        width: 100%;
+        background: #000;
+        display: block;
+        position: absolute;
+        left: 0px;
+        height: 0.185em;
+        border-radius: 1.2px;
+        transition: 0.5s all;
+    }
+    .hamburger span:nth-child(1) {
+        top: 0px;
+    }
+    .hamburger span:nth-child(2) {
+        top: 0.36em;
+    }
+    .hamburger span:nth-child(3) {
+        top: 0.73em;
+    }
+    .sidebar {
+        height: 40%;
+        background: #000;
+        top: 0px;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.2s all;
+        /* float: right; */
+        list-style: none;
+    }
+    .sidebar > ul li > a{
+        font-family: 'Open Sans', sans-serif;
+        text-align: right;
+        color: #ffffff;
+    }
+    #navicon {
+        display: none;
+    }
+    #navicon:checked ~ .sidebar {
+        visibility: visible;
+        opacity: 1;
+    }
+    #navicon:checked ~ .nav-toggle > .hamburger span {
+        top: 0.36em;
+    }
+    #navicon:checked ~ .nav-toggle > .hamburger span:nth-child(1) {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+    }
+    #navicon:checked ~ .nav-toggle > .hamburger span:nth-child(2) {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+    }
+    #navicon:checked ~ .nav-toggle > .hamburger span:nth-child(3) {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+    }
+
+    /* FIM DO MENU RESPONSIVO */
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .videozinho iframe {
+        min-height: 320px;
+    }
+
+}
+
+@media screen and (width: 320px) {
+
+    .videozinho iframe {
+        min-height: 300px;
+    }
+
+}
+
+@media screen and (width: 375px) {
+
+    .videozinho iframe {
+        min-height: 340px;
+    }
+
+}
+
+@media screen and (width: 768px) {
+
+    .videozinho iframe {
+        min-height: 476px;
+    }
+
+}
